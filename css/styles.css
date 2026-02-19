@@ -1,96 +1,128 @@
 /* || Global Styles */
+
 * {
-box-sizing: border-box;
-margin: 0;
-padding: 0;
+	box-sizing: border-box;
+	margin: 1;
+	padding: 1;
 }
+
 body {
-font-family: Times 'Times New Roman', Times, serif, sans-serif;
-line-height: 1.6;
-background-color: #b7b1ee;
-padding: 20px;
+	font-family: Times Roman, sans-serif;
+	line-height: 1.6;
+	background-color: #d8b3e3;
+	padding: 20px;
 }
 
 .container {
-max-width: 800px;
-margin: 0 auto;
+	max-width: 800px;
+	margin: 0 auto;
 }
 
+
+
 /* || Card Styling */
+
 .card {
-background: #ffffff;
-padding: 20px;
-margin-bottom: 20px;
-border-radius: 20px;
-box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+	background: #e1dce3;
+	padding: 20px;
+	margin-bottom: 20px;
+	border-radius: 8px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+	border: 2px solid #000000;
+}
+
+.dark-mode {
+	background-color: #505050;
+	color:white;
+}
+
+.dark-mode .card {
+	background-color: #333;
+	color: white;
+}
+
+.dark-mode input,
+.dark-mode textarea {
+	background-color: #444;
+	color: white;
+	border-color: #666;
 }
 
 /* || Typography */
+
 h1 {
-Text-align: center;
-margin-bottom: 10px;
+	Text-align: center;
+	margin-bottom: 10px;
 }
+
 h2 {
-margin-bottom: 10px;
-margin-top: 20px;
+	margin-bottom: 10px;
+	margin-top: 20px;
 }
+
 h2 {
-margin-bottom: 10px;
+	margin-bottom: 10px;
 }
 
 ul {
-margin-left: 20px;
-margin-bottom: 10px;
+	margin-left: 20px;
+	margin-bottom: 10px;
 }
 
 a {
-text-decoration: none;
-color: #0077cc;
+	text-decoration: none;
+	color: #FF46A2;
 }
+
 a:hover {
-color: #005fa3;
+	color: #005fa3
 }
 
 table {
-width: 100%;
-border-collapse: collapse;
-margin-top: 10px;
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 10px;
 }
 th, td {
-border: 1px solid #ccc;
-padding: 8px;
+	border: 1px solid #000000;
+	padding: 8px;
 }
+
 th {
-background-color: #0077cc;
-color: white;
+	background-color: #FF46A2;
+	color: white;
 }
 
 form {
-display: flex;
-flex-direction: column;
-gap: 10px;
-}
-input, textarea {
-padding: 8px;
-border: 1px solid #0e0a0a;
-border-radius: 4px;
-}
-button {
-padding: 10px;
-background-color: #a2c1e0;
-color: rgb(0, 0, 0);
-border: none;
-cursor: pointer;
-}
-button:hover {
-background-color: #a30088;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
 }
 
-.dark-mode .card { 
-   background-color:#222;
-   color:white;
+input, textarea {
+	padding: 8px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
 }
+
+button {
+	padding: 10px;
+	background-color : #FF91A4;
+	color: white;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #005fa3;
+}
+
 
 .hidden {
-display:none;
+	display:none;
+}
+
+
+.center-btn {
+    text-align: center;
+    margin-bottom: 20px;
 }

@@ -1,105 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/styles.css"> 
-    <meta charset="UTF-8"/button>
-    <title>PageniUwin CV</title>
+    <meta charset="UTF-8">
+    <title>Personal Online CV</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<header>
-    <h2></h2>
-    <section class="card">
-        <p> IT STUDENT | WEB SYSTEMS AND TECHONOLOGIES</p>
-    </section>
-<button id="themeToggle">Toggle Dark Mode</button>
-</header>
-<main>
+
+    <header>
+	<button id="themeToggle">Toggle Dark Mode</button>
+
+        <h1>Buhian, Owen S.</h1>
+        <p style="text-align: center;">IT Student | Web Systems and Technologies</p>
+    </header>
+
+    <main>
     <div class="container">
 
-    
-    <section class="card">
-        <h2> About me</h2>
-        <h2>Owen S. Buhian</h2>
-        <p>Email:
-           <a href="mailto:buhian.owen0515@gmail.com">buhian.owen0515@gmail.com</a><br>
-           GitHub:
-           <a href="https://github.com/gitniuwin" target="_blank">github.com</a>
-        </p>
-        <img src="images/profile.jpg" alt="Profile photo" width="200" height="200">
-        <p> i'm 20 years old i live in macabalan CDO</p>    
-    </section>
-    <section class="card">
-       <h2>Education</h2>
-       <table border="1" style="border-collapse: collapse;">
-        
-         <tr>
-         <th>Program</th>
-         <th>Institution</th>
-         <th>Year Graduated</th>
-         </tr>
-         <tr>
-           <th>College</th>
-           <th>USTP – CDO Campus</th>
-           <th>2028</th>
-        </tr>
-        <tr>
-            <th>Senior High</th>
-            <th>Liceo de Cagayan</th>
-            <th> 2022</th>
-        </tr>
-        <tr>
-            <th>Junior Highschool</th>
-            <th>Misamis Oriental General Comprehensive Highschool</th>
-            <th>2020</th>
-        </tr>
-        <tr>
-            <th>Elementary</th>
-            <th> Macabalan Elementary School</th>
-            <th> 2016</th>
-        </tr>
-        <tr>
-            <th>Kindergarten</th>
-            <th>Macabalan Elementary School</th>
-            <th>2010</th>
-        </tr>
-      </table>
-    </section>
-<button id="toggleSkills">Show/Hide Skills</button>
-    <section class="card" id="skillsSection">
-        <h2>
-<ul>
-    <li>WEB DEVELOPMENT
-        <ul>
-            <li>FRONTEND
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JAVASCRIPT</li>
-                </ul>
-            </li>
-            <li>BACKEND</li>
-        </ul>
-    </li>
-</ul>
-        </h2>
-    </section>
-<section class="card">
-  <h2>Contact Me</h2>
-  <form>
-    <input type="text" id="name" placeholder="Name"><br><br>
-    <input type="email" id="email" placeholder="Email"><br><br>
-    <textarea placeholder="Message"></textarea><br><br>
-    <button type="submit" id="submitBtn">Send</button>
-  </form>
-</section>
-</div>
-</main>
-<footer>
-    <p>&copy; 2026 BUHIAN OWEN. All rights reserved. </p>
-</footer>
-<script src="js/script.js""></script> 
+        <section class="card">
+            <h2>About Me</h2>
+            <p>
+                still Doing my bestt till now
+            </p>
+
+            <img src="images/profile.jpg" alt="Profile photo" width="300" height="300">
+
+            <p>
+                Email:
+                <a href="mailto:buhian.owen0515@gmail.com">buhian.owen0515@gmai.com</a><br>
+                GitHub:
+                <a href="https://github.com/gitniuwin" target="_blank">github.com</a>
+            </p>
+        </section>
+
+	<div class="center-btn">
+	<button id="toggleSkills">Show/Hide Skills</button>
+	</div>
+        <section class="card" id="skillsSection">
+            <h2>Skills</h2>
+            <ul>
+                <li>Web Development
+                    <ul>
+                        <li>Frontend
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+                        </li>
+                        <li>Backend</li>
+                    </ul>								
+                </li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Education</h2>
+
+            <table border="1"; style="border-collapse: collapse">
+                <tr>
+                    <th>Program</th>
+                    <th>Institution</th>
+                    <th>Year Graduated</th>
+                </tr>
+                <tr>
+                    <td>Bachelor of Science in Information Management</td>
+                    <td>USTP – CDO Campus</td>
+                    <td>2024-2028</td>
+                </tr>
+		<tr>
+		    <td>Humanities and Social Sciences</td>
+		    <td>Liceo de Cagayan University</td>
+		    <td>2022-2024</td>
+		</tr>
+		<tr>
+		    <td>Junior High School</td>
+		    <td>Misamis Oriental General Comprehensive High School</td>
+		    <td>2018-2020</td>
+		</tr>
+
+		<tr>
+		    <td>Elementary School</td>
+		    <td>Macabalan Elementary School</td>
+		    <td>2012-2018</td>
+		</tr>
+		<tr>
+		    <td>Kindergarten</td>
+		    <td>Macabalan Elementary School</td>
+		    <td>2010-2012</td>
+		</tr>
+            </table>
+        </section>
+
+        <section class="card">
+            <h2>Contact Me!</h2>
+
+            <form>
+                <input type="text" id="name" placeholder="Name"><br>
+                <input type="text" id="email" placeholder="Email"><br>
+                <textarea placeholder="Message"></textarea><br>
+                <button type="submit" id="submitBtn">Send</button>
+            </form>
+        </section>
+
+    </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Buhian OWEN. All rights reserved.</p>
+    </footer>
+
+<script src="js/script.js"></script>
 </body>
 </html>
-
-
-

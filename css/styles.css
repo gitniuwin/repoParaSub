@@ -86,3 +86,11 @@ button:hover {
 background-color: #a30088;
 }
 
+.dark-mode .card { 
+   background-color:#222;
+   color:white;
+}
+
+.hidden {
+display:none;
+}

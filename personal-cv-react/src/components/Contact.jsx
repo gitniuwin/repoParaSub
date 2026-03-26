@@ -2,45 +2,52 @@ import { useState } from "react";
 
 function Contact() {
   const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
 
   function handleSubmit(e) {
     e.preventDefault();
-    alert(`Thank you ${name}!`);
+
+    fetch("http://localhost/cv-api/process.php", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({ name: name })
+    })
+    .then(res => res.json())
+    // --- INSERT YOUR NEW BLOCK HERE ---
+    .then(data => {
+      if (data.message) {
+        alert(data.message);
+      } else {
+        alert("Unexpected error occurred.");
+      }
+    })
+    // ----------------------------------
+    .catch(err => {
+      console.error("Error:", err);
+      alert("Failed to connect to the server.");
+    });
   }
 
+  const handleClear = () => {
+    setName("");
+  };
+
   return (
-    <section className="card">
-      <h2>Contact Me!</h2>
-
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder="Name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-        />
-        <br />
-
-        <input
-          type="email"
-          placeholder="Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <br />
-
-        <textarea
-          placeholder="Message"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-        ></textarea>
-        <br />
-
-        <button type="submit">Send</button>
-      </form>
-    </section>
+    <form onSubmit={handleSubmit}>
+      <input
+        type="text"
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+        placeholder="Enter name"
+      />
+      <div style={{ marginTop: "10px" }}>
+        <button type="submit">Submit</button>
+        <button type="button" onClick={handleClear} style={{ marginLeft: "5px" }}>
+          Clear
+        </button>
+      </div>
+    </form>
   );
 }
 

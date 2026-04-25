@@ -12,7 +12,7 @@ function Contact() {
     fetch("http://localhost/cv-api/process.php", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ name: name }),
+      body: JSON.stringify({ name: name, email: email }),
     })
       .then((res) => res.json())
       .then((data) => {
